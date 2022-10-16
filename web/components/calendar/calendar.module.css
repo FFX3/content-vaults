@@ -1,0 +1,14 @@
+.calendar {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: [Sunday] calc(100% / 7) [Monday] calc(100% / 7) [Tuesday] calc(100% / 7) [Wednesday] calc(100% / 7) [Thursday] calc(100% / 7) [Friday] calc(100% / 7) [Saturday] calc(100% / 7);
+  grid-template-rows: [header] calc(100% / 7) [row-1] calc(100% / 7) [row-2] calc(100% / 7) [row-3] calc(100% / 7) [row-4] calc(100% / 7) [row-5] calc(100% / 7) [row-6] calc(100% / 7);
+  border-top: 5px solid red;
+  border-left: 5px solid red;
+}
+
+.cell {
+  border-right: 5px solid red;
+  border-bottom: 5px solid red;
+}
