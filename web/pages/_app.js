@@ -1,14 +1,12 @@
+import { useEffect, useState } from 'react'
 import '../styles/globals.css'
-import SessionProvider from '../components/SessionProvider'
-import AuthFilter from '../components/AuthFilter'
 
 function MyApp({ Component, pageProps }) {
+
+
+
   return (
-    <SessionProvider>
-      <AuthFilter>
-        <Component {...pageProps} />
-      </AuthFilter>
-    </SessionProvider>
+    <Component {...pageProps} />
   ) 
 
 }
