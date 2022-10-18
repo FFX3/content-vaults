@@ -1,4 +1,4 @@
-const { runPlay } = require('./helpers')
+const { runPlay } = require('../helpers/helpers')
 
 module.exports = async function seedUsers(client){
   await runPlay(client,

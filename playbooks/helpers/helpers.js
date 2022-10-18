@@ -1,8 +1,8 @@
-async function runPlay(client, text, values){
+async function runPlay(client, text, values = []){
   try {
     const res = await client.query(text, values)
-    console.log(res.rows[0])
-    // { name: 'brianc', email: 'brian.m.carlson@gmail.com' }
+    if(res.rowAsArray)
+      console.log(res.rows[0])
   } catch (err) {
     console.log(err.stack)
     process.exit()
