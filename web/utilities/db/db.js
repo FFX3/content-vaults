@@ -1,4 +1,5 @@
-import { Pool } from "pg";
+import pg from "pg"
+const { Pool } = pg
 
 let conn;
 
@@ -12,4 +13,4 @@ if (!conn) {
   });
 }
 
-export default conn ;
+export default conn;
